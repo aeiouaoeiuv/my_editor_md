@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>editor.md</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/editormd.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/katex.min.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/editormd.min.js"></script>
+	<script type="text/javascript" src="./js/katex.min.js"></script>
+</head>
+<body style="height: 95vh">
+	<div id="editormd">
+	    <textarea></textarea>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+	var editor = editormd({
+		id: "editormd",
+		path: "./lib/",
+		tex: true,
+		flowChart: true,
+		sequenceDiagram: true,
+		tocm: true,
+		htmlDecode: true,
+		emoji: true,
+	});
+});
+</script>
